@@ -1,6 +1,6 @@
 # Start up
 
-```
+```bash
 # Only need to run this once
 docker build -t  go-app .
 
