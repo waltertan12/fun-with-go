@@ -1,9 +1,11 @@
 FROM golang:1.9
 
+# File system stuff
 ADD . /go/src/app
 WORKDIR /go/src/app
 
-# RUN go get -d -v ./...
-# RUN go install -v ./...
+# Install dependencies
+RUN go install -v
 
-# CMD [ "bin", "bash" ]
+# Run Go application
+CMD [ "/go/bin/app" ]
